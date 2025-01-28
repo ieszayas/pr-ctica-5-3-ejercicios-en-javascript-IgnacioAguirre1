@@ -1,0 +1,327 @@
+/* General */
+body {
+    background: linear-gradient(135deg, #292b2c, #343a40);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding-top: 56px;
+}
+
+/* Modo Claro */
+body.light-mode {
+    background: linear-gradient(135deg, #f0f0f0, #fff); /* Fondo claro */
+    color: #333; /* Texto oscuro */
+}
+
+/* Estilo específico para h2 en modo claro */
+body.light-mode h2 {
+    color: #000 !important;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid #f00;
+}
+
+.navbar-brand .logo {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.5rem; /* Aumenta el tamaño de las letras */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin: 0 20px;
+}
+
+/* Navbar en modo claro */
+body.light-mode .navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f00;
+}
+
+.navbar-toggler {
+    font-size: 2rem; /* Aumenta el tamaño del icono */
+}
+
+/* Carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 450px;
+}
+
+/* Tabla de Circuitos */
+.table {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fondo blanco para la tabla */
+}
+
+/* Tabla - Modo Claro */
+body.light-mode .table {
+    background-color: #f9f9f9; /* Fondo claro en modo claro */
+}
+
+body.light-mode table {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+body.light-mode table th,
+body.light-mode table td {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Servicios */
+#columnas .service-box {
+    color: black;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Servicio - Modo Claro */
+body.light-mode #columnas .service-box {
+    background: #f9f9f9;
+    color: #333;
+}
+
+#columnas .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#columnas .service-box i {
+    font-size: 50px;
+    color: #f00;
+}
+
+/* Formulario */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+/* Formulario - Modo Claro */
+body.light-mode form {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo del input color */
+form #colorPicker {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Input color - Modo Claro */
+body.light-mode form #colorPicker {
+    background-color: #f0f0f0;
+}
+
+form .form-control {
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Botones del formulario */
+form button {
+    border-radius: 25px;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+}
+
+form button[type="submit"] {
+    background-color: #28a745;
+}
+
+form button[type="reset"] {
+    background-color: #6c757d;
+}
+
+/* Estilos de las notificaciones */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.toast.error {
+    background-color: #dc3545;
+}
+
+.toast.success {
+    background-color: #28a745;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer .footer-content {
+    font-size: 1.5rem;
+}
+
+footer .footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-content a:hover {
+    color: #f00;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons i {
+    font-size: 40px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+    color: #f00;
+}
+
+/* Estilos generales del footer en modo oscuro */
+
+/* Modo claro */
+body.light-mode footer {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-top: 2px solid #000;
+}
+
+/* Estilos de los iconos en modo oscuro (por defecto) */
+footer i {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Modo claro: iconos en negro */
+body.light-mode footer i {
+    color: #000 !important;
+}
+
+/* Reloj digital */
+#clock-container {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+body.light-mode #digital-clock {
+    color: black;
+}
+
+body.dark-mode #digital-clock {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Estilos del modo oscuro */
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Navbar en modo oscuro */
+body.dark-mode .navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Tabla de Circuitos en modo oscuro */
+body.dark-mode .tabla-circuitos {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+body.dark-mode .tabla-circuitos th,
+body.dark-mode .tabla-circuitos td {
+    color: #fff;
+}
+
+/* Footer en modo oscuro */
+body.dark-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Botón de cambio de tema */
+body.dark-mode #toggleThemeBtn {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Navbar en modo claro */
+body.light-mode .navbar {
+    background-color: #f8f9fa !important;
+    color: #000 !important;
+}
+
+/* Navbar en modo oscuro */
+body.dark-mode .navbar {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+/* Asegurar que los enlaces del navbar también cambien */
+body.light-mode .navbar a {
+    color: #000 !important;
+}
+
+body.dark-mode .navbar a {
+    color: #fff !important;
+}
