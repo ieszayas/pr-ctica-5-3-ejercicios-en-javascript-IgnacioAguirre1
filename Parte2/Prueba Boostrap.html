@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karting Los Santos</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body class="dark-mode">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Logo_Karting.png" alt="Logo" class="logo">
+                <span class="ms-2">Karting Los Santos</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tabla">Circuitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carrusel">Carrusel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#columnas">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formulario">Reserva</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="toggleThemeBtn" class="btn btn-primary">Cambiar Tema</button>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carrusel" class="carousel-container">
+        <div id="carouselKarting" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="alexander-andrews-psCOesRN0J0-unsplash.png" class="d-block w-100" alt="Karting 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="baptiste-prat-J6Xyftg_1aI-unsplash.png" class="d-block w-100" alt="Karting 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="petr-urbanek-eP9pqF1WTlo-unsplash.png" class="d-block w-100" alt="Karting 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="diego-gavilanez-aG3EyYKyxN0-unsplash.png" class="d-block w-100" alt="Karting 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="garry-zhuang-jyGqc7NKucQ-unsplash.png" class="d-block w-100" alt="Karting 5">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselKarting" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselKarting" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Circuitos -->
+    <div id="tabla" class="container py-5">
+        <h2 class="text-center text-white">Circuitos de Karting</h2>
+        <table class="table table-striped table-dark rounded shadow text-center">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Circuito</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Silverstone Karting</td>
+                    <td>Reino Unido <i class=""></i> </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Le Mans Karting</td>
+                    <td>Francia</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Daytona Sandown Park</td>
+                    <td>Estados Unidos</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Interlagos Kart Track</td>
+                    <td>Brasil <i class=""></i> </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Adria International Raceway</td>
+                    <td>Italia</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Sakhir Karting Circuit</td>
+                    <td>Bahréin</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Dubai Kartdrome</td>
+                    <td>Emiratos Árabes Unidos</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Suzuka Karting Circuit</td>
+                    <td>Japón <i class=""></i> </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Monza Karting Track</td>
+                    <td>Italia <i class=""></i> </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Nürburgring Kart Circuit</td>
+                    <td>Alemania</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Servicios -->
+    <div id="columnas" class="container py-5">
+        <h2 class="text-center text-white mb-5">Nuestros Servicios</h2>
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-cart"></i>
+                    <h5>Alquiler de Karts</h5>
+                    <p>Disfruta de karts de alta calidad para todas las edades.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-geo-alt"></i>
+                    <h5>Organización de Carreras</h5>
+                    <p>Compite en torneos emocionantes con tus amigos.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="service-box">
+                    <i class="bi bi-clock"></i>
+                    <h5>Mantenimiento y Reparación de Karts</h5>
+                    <p>Servicio técnico y mantenimiento especializado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Formulario de Reserva y Ubicación -->
+    <div id="formulario" class="container py-5">
+        <div class="row">
+            <!-- Formulario -->
+            <div class="col-md-6">
+                <h2 class="text-center text-white">Formulario de Reserva</h2>
+                <form id="formReserva" class="mt-4" method="post">
+
+                    <!--Paleta de colores en el formulario-->
+                    <label for="colorPicker">Selecciona el color de la tabla:</label>
+                    <input type="color" id="colorPicker">
+
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <div class="invalid-feedback">El nombre debe contener solo letras.</div>
+                    </div>
+
+                    <!-- Apellidos -->
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos"
+                            required>
+                        <div class="invalid-feedback">Los apellidos deben contener solo letras y espacios.</div>
+                    </div>
+
+                    <!-- Fecha de nacimiento -->
+                    <div class="mb-3">
+                        <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+                        <div class="invalid-feedback">La fecha de nacimiento no puede ser mayor a la fecha actual.</div>
+                    </div>
+
+                    <!-- Experiencia -->
+                    <div class="mb-3">
+                        <label for="experiencia" class="form-label">¿Ha conducido karts anteriormente?</label>
+                        <select class="form-select" id="experiencia" name="experiencia" required>
+                            <option value="" selected disabled>Seleccione una opción</option>
+                            <option value="Si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <!-- Licencia -->
+                    <div class="mb-3">
+                        <label for="licencia" class="form-label">¿Tiene licencia de conducir?</label>
+                        <select class="form-select" id="licencia" name="licencia" required>
+                            <option value="" selected disabled>Seleccione una opción</option>
+                            <option value="Si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <!-- Talla de casco -->
+                    <div class="mb-3">
+                        <label for="tallaCasco" class="form-label">Talla de casco</label>
+                        <select class="form-select" id="tallaCasco" name="tallaCasco" required>
+                            <option value="" selected disabled>Seleccione una talla</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+
+                    <!-- Fecha de reserva -->
+                    <div class="mb-3">
+                        <label for="fechaReserva" class="form-label">Día de la reserva</label>
+                        <input type="date" class="form-control" id="fechaReserva" name="fechaReserva" required>
+                        <div class="invalid-feedback">La fecha de reserva no puede ser una fecha pasada.</div>
+                    </div>
+
+                    <!-- Hora de reserva -->
+                    <div class="mb-3">
+                        <label for="horaReserva" class="form-label">Hora de la reserva</label>
+                        <input type="time" class="form-control" id="horaReserva" name="horaReserva" required>
+                        <div class="invalid-feedback">La hora de reserva no puede ser pasada.</div>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono de contacto</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono"
+                            placeholder="Introduce tu teléfono" required>
+                        <div class="invalid-feedback">El teléfono debe tener al menos 7 dígitos numéricos.</div>
+                    </div>
+
+                    <!-- Correo -->
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo de contacto</label>
+                        <input type="email" class="form-control" id="correo" name="correo"
+                            placeholder="Introduce tu correo electrónico" required>
+                        <div class="invalid-feedback">El correo electrónico no tiene un formato válido.</div>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="acuerdo" name="acuerdo" required>
+                        <label class="form-check-label" for="acuerdo">
+                            Acepto los términos y condiciones de suscripción.
+                        </label>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="reset" class="btn btn-secondary" id="limpiarBtn">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="col-md-6">
+                <h2 class="text-center text-white">Ubicación</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.141784946431!2d-3.252813323466716!3d40.494247650916975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4251f95dbe1855%3A0xd511d49c67aab601!2sKarting%20Club%20Los%20Santos!5e0!3m2!1ses!2ses!4v1737647605432!5m2!1ses!2ses"
+                        width="600" height="500" style="border:0;"></iframe>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clock-container">
+        <p id="digital-clock">00:00:00</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Karting Los Santos. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.instagram.com" class="text-white mx-3"><i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com" class="text-white mx-3"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com" class="text-white mx-3"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+    <script src="codigo.js"></script>
+
+</body>
+
+</html>
